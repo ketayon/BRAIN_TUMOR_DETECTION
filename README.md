@@ -11,63 +11,65 @@ Additionally, the repository explores a hybrid quantum-classical approach using 
 
 ---
 
+# Brain Tumor Detection using Classical and Quantum Models
+
 ## Results
 
 ### 1. **Classical CNN-based Model**
-- **Validation Accuracy**: 94.07%
-- **Test Accuracy**: 88.24%
-- **Test Loss**: 0.3371
+- **Accuracy**: 80%
+- **Classification Report**:
+  - **Class 0 (No Tumor)**: Precision = 0.76, Recall = 0.84, F1-Score = 0.80
+  - **Class 1 (Tumor)**: Precision = 0.84, Recall = 0.76, F1-Score = 0.80
+  - **Overall Accuracy**: 80%
+- **Confusion Matrix**:
+  [[16, 3],
+   [5, 16]]
+- **ROC AUC Score**: 0.862
 
-#### Classification Report
-| Class | Precision | Recall | F1-Score | Support |
-|-------|-----------|--------|----------|---------|
-| No    | 0.98      | 0.84   | 0.90     | 98      |
-| Yes   | 0.91      | 0.99   | 0.94     | 155     |
-| **Overall Accuracy** | **93%** |
+### 2. **Hybrid Quantum-Classical Model (Ingenii)**
+- **Accuracy**: 80%
+- **Classification Report**:
+  - **Class 0 (No Tumor)**: Precision = 0.76, Recall = 0.84, F1-Score = 0.80
+  - **Class 1 (Tumor)**: Precision = 0.84, Recall = 0.76, F1-Score = 0.80
+  - **Overall Accuracy**: 80%
+- **Confusion Matrix**:
+  [[16, 3],
+   [5, 16]]
+- **ROC AUC Score**: 0.802
 
-### 2. **QuantumCNN Model**
-- **Validation Accuracy**: 96.44%
-- **Test Accuracy**: Not explicitly stated but inferred to be **96.44%**.
+### 3. **QuantumCNN Model (qml_torch)**
+- **Accuracy**: 90%
+- **Classification Report**:
+  - **Class 0 (No Tumor)**: Precision = 1.00, Recall = 0.79, F1-Score = 0.88
+  - **Class 1 (Tumor)**: Precision = 0.84, Recall = 1.00, F1-Score = 0.91
+  - **Overall Accuracy**: 90%
+- **Confusion Matrix**:
+  [[15, 4],
+   [0, 21]]
+- **ROC AUC Score**: 0.895
 
-#### Classification Report
-| Class | Precision | Recall | F1-Score | Support |
-|-------|-----------|--------|----------|---------|
-| No    | 0.97      | 0.94   | 0.95     | 98      |
-| Yes   | 0.96      | 0.98   | 0.97     | 155     |
-| **Overall Accuracy** | **96%** |
+### 4. **Quantum Kernel Trainer Model (qiskit)**
+- **Accuracy**: 60.78%
+- **Classification Report**:
+  - **Class 0 (No Tumor)**: Precision = 0.83, Recall = 0.21, F1-Score = 0.33
+  - **Class 1 (Tumor)**: Precision = 0.58, Recall = 0.96, F1-Score = 0.72
+  - **Overall Accuracy**: 60.78%
+- **Confusion Matrix**:
+  [[5, 19],
+   [1, 26]]
+- **ROC AUC Score**: 0.664
 
-### 3. **Hybrid Quantum-Classical Model (Ingenii)**
-- **Overall Accuracy**: 89%
+## Conclusions
 
-#### Classification Report
-| Class | Precision | Recall | F1-Score | Support |
-|-------|-----------|--------|----------|---------|
-| No    | 0.84      | 0.87   | 0.85     | 98      |
-| Yes   | 0.91      | 0.90   | 0.91     | 155     |
-| **Overall Accuracy** | **89%** |
+- **QuantumCNN** outperforms all other models with an accuracy of **90%**, showing strong potential in detecting brain tumors.
+- The **Classical CNN-based Model** and the **Hybrid Quantum-Classical Model (Ingenii)** achieve a solid accuracy of **80%** each. Despite showing potential, these models need further optimization.
+- The **Quantum Kernel Trainer Model** shows relatively poor performance with an accuracy of **60.78%**. The performance indicates that quantum models based on kernel methods may require further refinement and optimization.
+- The **ROC AUC Score** is highest for the **QuantumCNN** model (0.895), indicating better overall performance in distinguishing between tumor and non-tumor classes.
 
----
-
-## Files in the Repository
-
-- `brain_tumor_detection.ipynb`: Implementation of both Classical CNN and QuantumCNN approaches.
-- `ingenii_brain_tumor_detection.ipynb`: Hybrid quantum-classical approach using Ingenii's quantum libraries.
-
----
-
-## Observations
-
-1. **QuantumCNN** achieves the highest accuracy (96%), outperforming both the Classical CNN (93%) and the Hybrid Quantum-Classical approach (89%).
-2. The classical model performs reasonably well, with strong performance metrics but slightly lower than the QuantumCNN.
-3. The hybrid model demonstrates potential but requires further optimization to match QuantumCNN's performance.
-
----
-
-## Future Work
-
-- Improve the hybrid model's accuracy by tuning hyperparameters and exploring advanced quantum circuit designs.
-- Experiment with other quantum architectures to further push performance metrics.
-- Evaluate computational efficiency and resource requirements of each approach.
+## Future Directions
+- Further optimization of quantum models (especially kernel-based approaches) is necessary to improve performance.
+- Experimenting with more advanced hybrid architectures combining quantum and classical computing could lead to even better results.
+- More hyperparameter tuning and training data augmentation could help improve the performance of the classical models.
 
 ---
 
