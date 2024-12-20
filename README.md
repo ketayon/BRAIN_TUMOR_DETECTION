@@ -76,31 +76,6 @@ Below is a summary of all models with their respective performance metrics:
 
 ---
 
-## Pegasos QSVC Model - Classification Report
-
-```json
-{
-  '0': {'precision': 0.5, 'recall': 0.5, 'f1-score': 0.5, 'support': 24.0},
-  '1': {'precision': 0.5555555555555556, 'recall': 0.5555555555555556, 'f1-score': 0.5555555555555556, 'support': 27.0},
-  'accuracy': 0.5294117647058824,
-  'macro avg': {'precision': 0.5277777777777778, 'recall': 0.5277777777777778, 'f1-score': 0.5277777777777778, 'support': 51.0},
-  'weighted avg': {'precision': 0.5294117647058824, 'recall': 0.5294117647058824, 'f1-score': 0.5294117647058824, 'support': 51.0}
-}
-```
-
-### Confusion Matrix:
-```
-[[12 12]
- [12 15]]
-```
-
-### ROC AUC Score:
-```
-0.3811728395061728
-```
-
----
-
 ## Key Observations
 
 1. **Best Performing Model**:
