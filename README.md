@@ -1,3 +1,4 @@
+
 # Brain Tumor Detection Models - Comparative Analysis
 
 ## Overview
@@ -49,6 +50,10 @@ The models include classical machine learning techniques, hybrid quantum-classic
     **Type:** Quantum Kernel Training  
     **Tools:** Qiskit Quantum Kernel Trainer
 
+11. **Pegasos_qsvc_qiskit_brain_tumor_detection.ipynb**
+    **Type:** Quantum Kernel-Based Machine Learning  
+    **Tools:** Qiskit Fidelity Quantum Kernel
+
 ---
 
 ## Performance Comparison
@@ -67,6 +72,32 @@ Below is a summary of all models with their respective performance metrics:
 | **qml_torch_brain_tumor_detection**          | 75.0        | 0.68 / 0.87    | 0.89 / 0.62  | 0.77 / 0.72    | 0.7568        | Good for class 0              |
 | **quantum_torch_brain_tumor_detection**      | 80.39       | 0.93 / 0.74    | 0.63 / 0.96  | 0.75 / 0.83    | N/A           | High precision for class 0    |
 | **QuantumKernelTrainer_qiskit**              | 60.78       | 0.83 / 0.58    | 0.21 / 0.96  | 0.33 / 0.72    | 0.6635        | Imbalanced recall             |
+| **Pegasos_qsvc_qiskit_brain_tumor_detection**| 52.94       | 0.50 / 0.56    | 0.50 / 0.56  | 0.50 / 0.56    | 0.3812        | Moderate performance          |
+
+---
+
+## Pegasos QSVC Model - Classification Report
+
+```json
+{
+  '0': {'precision': 0.5, 'recall': 0.5, 'f1-score': 0.5, 'support': 24.0},
+  '1': {'precision': 0.5555555555555556, 'recall': 0.5555555555555556, 'f1-score': 0.5555555555555556, 'support': 27.0},
+  'accuracy': 0.5294117647058824,
+  'macro avg': {'precision': 0.5277777777777778, 'recall': 0.5277777777777778, 'f1-score': 0.5277777777777778, 'support': 51.0},
+  'weighted avg': {'precision': 0.5294117647058824, 'recall': 0.5294117647058824, 'f1-score': 0.5294117647058824, 'support': 51.0}
+}
+```
+
+### Confusion Matrix:
+```
+[[12 12]
+ [12 15]]
+```
+
+### ROC AUC Score:
+```
+0.3811728395061728
+```
 
 ---
 
@@ -95,10 +126,6 @@ Below is a summary of all models with their respective performance metrics:
 - **Hybrid quantum-classical models** outperform pure quantum models in brain tumor detection tasks.
 - Classical models remain strong contenders, with robust and reliable results.
 - Further improvements in quantum models could focus on balancing class performance and tuning hyperparameters.
-
-### Recommendation
-- Use `qiskit_hybrid_brain_tumor_detection` for best overall performance.
-- Explore ensembles combining classical and quantum models for improved generalizability.
 
 ---
 
