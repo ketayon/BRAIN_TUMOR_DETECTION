@@ -1,4 +1,3 @@
-
 # Brain Tumor Detection Models - Comparative Analysis
 
 ## Overview
@@ -50,7 +49,7 @@ The models include classical machine learning techniques, hybrid quantum-classic
     **Type:** Quantum Kernel Training  
     **Tools:** Qiskit Quantum Kernel Trainer
 
-11. **Pegasos_qsvc_qiskit_brain_tumor_detection.ipynb**
+11. **Pegasos_qsvc_qiskit_brain_tumor_detection.ipynb**  
     **Type:** Quantum Kernel-Based Machine Learning  
     **Tools:** Qiskit Fidelity Quantum Kernel
 
