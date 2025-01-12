@@ -1,3 +1,4 @@
+
 # Brain Tumor Detection Models - Comparative Analysis
 
 ## Overview
@@ -57,31 +58,29 @@ The models include classical machine learning techniques, hybrid quantum-classic
 
 ## Performance Comparison
 
-Below is a summary of all models with their respective performance metrics:
-
 | Model                                         | Accuracy (%) | Precision (0/1) | Recall (0/1) | F1-Score (0/1) | ROC AUC Score | Notes                         |
 |---------------------------------------------|-------------|----------------|--------------|----------------|---------------|--------------------------------|
-| **classical_brain_tumor_detection**          | 80.0        | 0.76 / 0.84    | 0.84 / 0.76  | 0.80 / 0.80    | 0.8621        | Balanced, strong performance  |
-| **FidelityQuantumKernel_qiskit**             | 62.74       | 1.0 / 0.58     | 0.21 / 1.0   | 0.34 / 0.73    | 0.6944        | High recall imbalance         |
-| **ingenii_brain_tumor_detection**            | 80.0        | 0.76 / 0.84    | 0.84 / 0.76  | 0.80 / 0.80    | 0.8020        | Similar to classical          |
-| **pennylane_brain_tumor_detection**          | 77.5        | 0.81 / 0.75    | 0.68 / 0.86  | 0.74 / 0.80    | 0.7707        | Balanced performance          |
-| **piqture_brain_tumor_detection**            | 44.62       | -              | -            | -              | -             | Low accuracy                  |
-| **qiskit_hybrid_brain_tumor_detection**      | 85.0        | 0.93 / 0.80    | 0.73 / 0.95  | 0.82 / 0.87    | 0.8446        | Best performance overall      |
-| **qiskit_ml_brain_tumor_detection**          | 38.06       | -              | -            | -              | -             | Low accuracy                  |
-| **qml_torch_brain_tumor_detection**          | 75.0        | 0.68 / 0.87    | 0.89 / 0.62  | 0.77 / 0.72    | 0.7568        | Good for class 0              |
-| **quantum_torch_brain_tumor_detection**      | 80.39       | 0.93 / 0.74    | 0.63 / 0.96  | 0.75 / 0.83    | N/A           | High precision for class 0    |
-| **QuantumKernelTrainer_qiskit**              | 60.78       | 0.83 / 0.58    | 0.21 / 0.96  | 0.33 / 0.72    | 0.6635        | Imbalanced recall             |
-| **Pegasos_qsvc_qiskit_brain_tumor_detection**| 52.94       | 0.50 / 0.56    | 0.50 / 0.56  | 0.50 / 0.56    | 0.3812        | Moderate performance          |
+| **classical_brain_tumor_detection**          | 74.51       | 0.87 / 0.69    | 0.54 / 0.93  | 0.67 / 0.79    | 0.8241        | Balanced performance          |
+| **FidelityQuantumKernel_qiskit**             | 61.0        | 0.75 / 0.58    | 0.25 / 0.93  | 0.38 / 0.71    | -             | High recall imbalance         |
+| **ingenii_brain_tumor_detection**            | 66.67       | 0.61 / 0.78    | 0.83 / 0.52  | 0.70 / 0.62    | -             | Moderate performance          |
+| **pennylane_brain_tumor_detection**          | 78.43       | 0.84 / 0.75    | 0.67 / 0.89  | 0.74 / 0.81    | -             | High accuracy                 |
+| **piqture_brain_tumor_detection**            | 50.98       | -              | -            | -              | -             | Poor performance              |
+| **qiskit_hybrid_brain_tumor_detection**      | 86.27       | 1.0 / 0.79     | 0.71 / 1.0   | 0.83 / 0.89    | -             | Best overall performance      |
+| **qiskit_ml_brain_tumor_detection**          | 40.48       | -              | -            | -              | -             | Low accuracy                  |
+| **qml_torch_brain_tumor_detection**          | 72.55       | 0.71 / 0.74    | 0.71 / 0.74  | 0.71 / 0.74    | -             | Balanced                      |
+| **quantum_torch_brain_tumor_detection**      | 80.39       | 0.94 / 0.74    | 0.63 / 0.96  | 0.75 / 0.84    | -             | Strong for class 1            |
+| **QuantumKernelTrainer_qiskit**              | 60.78       | 0.83 / 0.58    | 0.21 / 0.96  | 0.33 / 0.72    | 0.6636        | Imbalanced recall             |
+| **Pegasos_qsvc_qiskit_brain_tumor_detection**| 57.0        | 0.56 / 0.58    | 0.42 / 0.70  | 0.48 / 0.63    | -             | Moderate performance          |
 
 ---
 
 ## Key Observations
 
 1. **Best Performing Model**:
-   - `qiskit_hybrid_brain_tumor_detection` achieved the highest accuracy of **85%** with balanced precision, recall, and F1-scores.
+   - `qiskit_hybrid_brain_tumor_detection` achieved the highest accuracy of **86.27%** with balanced precision, recall, and F1-scores.
 
 2. **Classical Approaches**:
-   - `classical_brain_tumor_detection` and `ingenii_brain_tumor_detection` performed consistently well with **80% accuracy**.
+   - `classical_brain_tumor_detection` and `ingenii_brain_tumor_detection` performed consistently well with **74.51%** and **66.67%** accuracy, respectively.
 
 3. **Quantum and Hybrid Approaches**:
    - Hybrid models like `qiskit_hybrid_brain_tumor_detection` and `quantum_torch_brain_tumor_detection` showed competitive performance.
@@ -107,12 +106,12 @@ Below is a summary of all models with their respective performance metrics:
 
 | Metric                    | Best Model                           | Score     |
 |---------------------------|-------------------------------------|-----------|
-| **Accuracy**              | qiskit_hybrid_brain_tumor_detection | 85.0%     |
-| **F1-Score**              | qiskit_hybrid_brain_tumor_detection | 0.87 / 0.82 |
-| **ROC AUC Score**         | classical_brain_tumor_detection     | 0.8621    |
-| **Balanced Performance**  | classical_brain_tumor_detection     | High      |
+| **Accuracy**              | qiskit_hybrid_brain_tumor_detection | 86.27%    |
+| **F1-Score**              | qiskit_hybrid_brain_tumor_detection | 0.89 / 0.83 |
+| **ROC AUC Score**         | classical_brain_tumor_detection     | 0.8241    |
+| **Balanced Performance**  | pennylane_brain_tumor_detection     | High      |
 
 ---
 
 ## Acknowledgements
-- **Frameworks Used**: Qiskit, PennyLane, PyTorch, Scikit-Learn
+- **Frameworks Used**: Qiskit, PennyLane, PyTorch, Scikit-Learn.
