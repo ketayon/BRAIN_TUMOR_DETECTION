@@ -75,7 +75,7 @@ The models include classical machine learning techniques, hybrid quantum-classic
 | **quantum_torch_brain_tumor_detection**      | 80.39       | 0.94 / 0.74    | 0.63 / 0.96  | 0.75 / 0.84    | -             | Strong for class 1            |
 | **QuantumKernelTrainer_qiskit**              | 60.78       | 0.83 / 0.58    | 0.21 / 0.96  | 0.33 / 0.72    | 0.6636        | Imbalanced recall             |
 | **Pegasos_qsvc_qiskit_brain_tumor_detection**| 57.0        | 0.56 / 0.58    | 0.42 / 0.70  | 0.48 / 0.63    | -             | Moderate performance          |
-| **Pegasos_upgrated_qsvc_qiskit_brain_tumor_detection**| 55.0 | 0.67 / 0.54  | 0.083 / 0.96 | 0.15 / 0.69    | -             | Moderate performance          |
+| **Pegasos_upgrated_qsvc_qiskit_brain_tumor_detection**| 73.0 | 0.78 / 0.70  | 0.58 / 0.85 | 0.67 / 0.77     | -             | Moderate performance          |
 ---
 
 ## Key Observations
