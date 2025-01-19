@@ -1,4 +1,3 @@
-
 # Brain Tumor Detection Models - Comparative Analysis
 
 ## Overview
@@ -42,19 +41,15 @@ The models include classical machine learning techniques, hybrid quantum-classic
    **Type:** Quantum Torch-Based Model  
    **Tools:** PyTorch and Quantum ML Integration
 
-9. **quantum_torch_brain_tumor_detection.ipynb**  
-   **Type:** Hybrid Quantum Torch ML  
-   **Tools:** PyTorch + Quantum Methods
-
-10. **QuantumKernelTrainer_qiskit_brain_tumor_detection.ipynb**  
+9. **QuantumKernelTrainer_qiskit_brain_tumor_detection.ipynb**  
     **Type:** Quantum Kernel Training  
     **Tools:** Qiskit Quantum Kernel Trainer
 
-11. **Pegasos_qsvc_qiskit_brain_tumor_detection.ipynb**  
+10. **Pegasos_qsvc_qiskit_brain_tumor_detection.ipynb**  
     **Type:** Quantum Kernel-Based Machine Learning  
     **Tools:** Qiskit Fidelity Quantum Kernel
 
-12. **Pegasos_upgrated_qsvc_qiskit_brain_tumor_detection.ipynb**  
+11. **Pegasos_upgrated_qsvc_qiskit_brain_tumor_detection.ipynb**  
     **Type:** Quantum Kernel-Based Machine Learning  
     **Tools:** Qiskit Fidelity Quantum Kernel
 
@@ -71,8 +66,7 @@ The models include classical machine learning techniques, hybrid quantum-classic
 | **piqture_brain_tumor_detection**            | 50.98       | -              | -            | -              | -             | Poor performance              |
 | **qiskit_hybrid_brain_tumor_detection**      | 86.27       | 1.0 / 0.79     | 0.71 / 1.0   | 0.83 / 0.89    | -             | Best overall performance      |
 | **qiskit_ml_brain_tumor_detection**          | 40.48       | -              | -            | -              | -             | Low accuracy                  |
-| **qml_torch_brain_tumor_detection**          | 72.55       | 0.71 / 0.74    | 0.71 / 0.74  | 0.71 / 0.74    | -             | Balanced                      |
-| **quantum_torch_brain_tumor_detection**      | 80.39       | 0.94 / 0.74    | 0.63 / 0.96  | 0.75 / 0.84    | -             | Strong for class 1            |
+| **qml_torch_brain_tumor_detection**          | 72.55       | 0.71 / 0.74    | 0.71 / 0.74  | 0.71 / 0.74    | -             | Balanced                      |           |
 | **QuantumKernelTrainer_qiskit**              | 60.78       | 0.83 / 0.58    | 0.21 / 0.96  | 0.33 / 0.72    | 0.6636        | Imbalanced recall             |
 | **Pegasos_qsvc_qiskit_brain_tumor_detection**| 57.0        | 0.56 / 0.58    | 0.42 / 0.70  | 0.48 / 0.63    | -             | Moderate performance          |
 | **Pegasos_upgrated_qsvc_qiskit_brain_tumor_detection**| 73.0 | 0.78 / 0.70  | 0.58 / 0.85 | 0.67 / 0.77     | -             | Moderate performance          |
